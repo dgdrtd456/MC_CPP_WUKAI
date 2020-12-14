@@ -38,14 +38,14 @@ int main(int argc, char **argv)
 
     //使用（）访问矩阵中的元素
     cout << "print matirx 2*3 : "<< endl;
-    // for (int i = 0; i < 2; ++i)
-    // {
-    //     for (int j = 0; j < 3; ++j)
-    //     {
-    //         cout << matrix_23(i,j) << "\t";
-    //     }
-    //     cout << endl;
-    // }
+    for (int i = 0; i < 2; ++i)
+    {
+        for (int j = 0; j < 3; ++j)
+        {
+            cout << matrix_23(i,j) << "\t";
+        }
+        cout << endl;
+    }
 
     // //初始化两个三维向量
     // v_3d << 3, 2, 1;
