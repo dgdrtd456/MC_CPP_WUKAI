@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 
     //声明一个三维向量，Vector_3d实际上是一个通过typedef定义的内置类型，本质上仍然是Eigen::Matrix模板类
     Vector3d v_3d;
-    //Matrix<float, 2, 3> vd_3d;
+    Matrix<float, 2, 3> vd_3d;
 
     //声明一个3*3的矩阵，并初始化为0矩阵
     Matrix3d matrix_33 = Matrix3d::Zero();
@@ -47,9 +47,9 @@ int main(int argc, char **argv)
         cout << endl;
     }
 
-    // //初始化两个三维向量
-    // v_3d << 3, 2, 1;
-    // //vd_3d << 4, 5, 6;
+    //初始化两个三维向量
+    v_3d << 3, 2, 1;
+    vd_3d << 4, 5, 6;
     // //不能混乘两种类型的矩阵，因此需要显示转换类型：.cast<type>
     // Matrix<double, 2, 1> result = matrix_23.cast<double>() * v_3d;
     // cout << "[1,2,3;4,5,6]*[3,2,1] = "<< result.transpose() << endl;
