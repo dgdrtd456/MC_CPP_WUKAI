@@ -1,6 +1,6 @@
 #include <iostream>
-#include "eigen-3.3.9/Eigen/Dense"
-#include "eigen-3.3.9/Eigen/
+#include "../eigen-3.3.9/Eigen/Core"
+#include "../eigen-3.3.9/Eigen/Dense"
 
 using namespace Eigen;
 using namespace std;
